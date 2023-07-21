@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 32px);
+  grid-template-rows: repeat(10, 32px);
+}
+.grid-item {
+  border: 1px solid black;
+  width: 32px;
+  height: 32px;
+}
+</style>
+</head>
+<body>
+<input type='file' id='imageLoader' name='imageLoader'/>
+<button id='saveButton'>Save</button>
+<button id='loadButton'>Load</button>
+<div id='grid' class='grid-container'>
+</div>
+<script src='editor.js'></script>
+</body>
+</html>
